@@ -1,0 +1,48 @@
+<?php
+//session_start();
+$_SESSION['userName']="";
+$_SESSION['password']="";
+$_SESSION['userType']="";
+?>
+<title>SDN:: Administration Page</title>
+<?php
+include'dbconnect.php';
+include'header.php';
+$userType = 'userType';
+?>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #0000FF;
+}
+-->
+</style>
+    <div align="center" >
+          
+            <a href=compose.php>Compose</a>&nbsp 
+            <a href=inbox.php>Packet Inbox</a> &nbsp
+            <a href=malicious.php>Malicious Inbox</a>
+            
+                &nbsp &nbsp &nbsp &nbsp &nbsp 
+               
+                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+           
+           <a href=userView.php>View User</a> &nbsp  
+           <a href=contactView.php>View Contact</a> &nbsp
+           <a href=tablesView.php>View Tables</a> &nbsp  
+           <a href=setThreshold.php>Set Threshold</a> &nbsp    
+           
+            &nbsp &nbsp &nbsp &nbsp &nbsp 
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+           
+           <a href=aboutUs.php>About Us</a>&nbsp
+           <a href=contact.php>Contact Us</a>&nbsp
+           <a href=login.php>Logout</a>
+           <a href="javascript:history.go(-1)">Back</a>&nbsp
+         <P>  Administration Page
+    </div>      
+           
+</body>
+</html>
